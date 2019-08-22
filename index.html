@@ -1,50 +1,190 @@
 <!DOCTYPE html> 
-<html lang= "en"> 
-    
+<html lang= "en">  
 <head> 
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <title>Page Title</title>
+     <style>
+       main {display: flex;}
+       main div {width: 50%;padding:0%}
+       main div:first-child{border-right:2px solid white;}
+       main div section.skills:after{content:' \2192';color:white;position:relative;top:-100px}
+     		
+       body {background-color: #5CDB95;
+            font-family: 'Oswald', sans-serif;}
+          
+            header {background-color: #5CDB95;}
+            div {
+  background-color: #379683;
+  padding: 20px;
+}
+   
+
+p.summary {
+background-color: darkgray;
+  filter: alpha(opacity=10);
+  margin:10px;
+  padding:20px;
+  color: white;
+  border: 10px double black;
+  }
+     
+p.summary:hover
+       {background-color:#5CDB95;}
+
+p.intern{
+background-color: darkgray;
+  filter: alpha(opacity=10);
+  margin:10px 10px 10px 10px;
+  padding:20px;
+  color: white;
+  border: 10px double black;
+  }
+       
+.box{
+background-color: darkgray;
+  filter: alpha(opacity=10);
+  margin:10px 10px 240px 10px;
+  padding:20px;
+  color: white;
+  border: 10px double black!important;
+  }
+       
+p.intern:hover,.box:hover
+       {background-color:#5CDB95;}
+
+p.crew{
+background-color: darkgray;
+  filter: alpha(opacity=10);
+  margin: 420px 10px 10px 10px;
+  padding:20px;
+  color: white;
+  border: 10px double black;
+  }
+       
+p.crew:hover
+       {background-color:#5CDB95;}
+       
+p.assistant{
+background-color:darkgray;
+  filter: alpha(opacity=10);
+  margin: 350px 10px 10px 10px;
+  padding:20px;
+  color: white;
+  border: 10px double black;
+  }
+       
+p.assistant:hover
+       {background-color:#5CDB95;}
+       
+ul.skills{
+background-color: darkgray;
+  filter: alpha(opacity=10);
+  margin:10px 10px 250px 10px;
+  color: white;
+  border: 10px double black;
+  }
+       
+ul.skills:hover
+       {background-color:#5CDB95;}
+  
+section.info {
+background-color: darkgray;
+filter: alpha(opacity=10);
+  margin: 300px 10px 10px 10px;
+  padding:10px;
+  color: white;
+  border: 10px double black;
+  }
+       
+section.info:hover
+       {background-color:#5CDB95;}
+     
+     
+     .myself {
+         text-align: center;
+       }
+       
+       .ps {
+         text-align: center;
+         color: white;
+       }
+       
+       .eh {
+         text-align: center;
+         margin: -130px 10px 10px 10px;
+         color: white;
+         z-index:2;
+       }
+       
+       .Skillz {
+         text-align: center;
+         color: white;
+         margin: 170px 10px 10px 10px;
+       }
+       
+       .name {
+         color:white;
+       }
+       
+       .myself {
+         color:white;
+       }
+       
+       .teach {
+         color: white;
+         margin: 10px 10px 10px 10px;
+       }
+       
+       .pvd {
+         color: white;
+       }
+       
+       .member {
+         color: white;
+         margin: 10px 10px 10px 10px;
+       }
+       
+       
+        </style>
 </head>
-<body> 
+<body>
+
   <header> 
-    <h1>Zachary Fonseca</h1>
-    <h2> A Little About Myself</h2>
+    <h1 class="name">Zachary Fonseca</h1>
+    <h2 class="myself">A Little About Myself</h2>
     </header>
-  <main> 
+  <img src="logo.png">
+  <main>
+    <div>
     <section>
-      <h3> Professional Summmary </h3>
+      <h3 class="ps"> Professional Summary </h3>
+      <aside class="box">
       <p>Creative and resourceful, able to adapt to changing priorities and maintain a positive attitude and work ethic. Interactive with coworkers and makes sure all goes according to plan.</p>
+      </aside>
 
     </section>
     
     
     
     <section> 
-      <h3>Employment History</h3>
+     
+      <h3 class="eh">Employment History</h3>
+       <aside class="box">
       <p>Intern: PVD Elite Coders and Interns, Providence, RI (July 2019 - August 2019)</p>
-      <ul>
+      <ul class="pvd">
 <li> </li>
 <li> </li>  
 <li> </li>
 <li> </li>
 <li> </li>
         </ul>
-   
-    
-  
-      <p>Crew Member: Wendys, East Greenwich, RI (June 2019 - August 2019)</p>
-      <ul>
-<li> </li>
-<li> </li>  
-<li> </li>
-<li> </li>
-<li> </li>
-        </ul>
+      </aside>
+
   
     
- 
-      
-      <p>Teachers Assistant: Gilbert Stuart Middle School, Providence, RI (Mar. 2017 - May 2017)</p>
-      <ul>
+ <aside class="box">
+      <p>Teachers Assistant: Gilbert Stuart Middle School, Providence, RI (Mar. 2017 - May 2017)
+      <ul class="teach">
 <li>Adapt teaching methods and instructional materials to meet student needs </li>
 <li>Establish and enforce rules for behavior and procedures for maintaining students.</li>  
 <li>Maintain accurate, complete, and correct student records as required by laws, district policies, and administrative policies</li>
@@ -52,19 +192,44 @@
 <li>Prepare students for later grades by encouraging them to explore future learning opportunities</li> 
         
       </ul>
+      </aside>
       </section>
-    
+    </div>
+    <div> 
+      
     <section>
-      <h3>Skills</h3>
-      <ul>
+      
+      <h3 class="Skillz">Skills</h3>
+      <ul class="skills">
       <li>Communication</li>
       <li>Time Management</li>
       <li>Adaptability</li>
       <li>MS Office</li>
       <li>Teamwork</li>
+        
       </ul>
     </section>
+      
+      <aside class="box">
+      <p>Crew Member: Wendys, East Greenwich, RI (June 2019 - August 2019)</p>
+      <ul class="member">
+<li> </li>
+<li> </li>  
+<li> </li>
+<li> </li>
+<li> </li>
+        </ul>
+      </aside>
+  
     
+     <section class="info">
+      <h3>Contact Info</h3>
+      <p>Email:</p>
+      <a href= "mailto:zacharyjfonseca@gmail.com">zacharyjfonseca@gmail.com</a>
+      <p>Phone Number:</p>
+      <a href= "tel:(401)556-5449">(401)556-5449</a>
+    </section>
+    </div>
   </main>
 </body> 
  </html>  
